@@ -8,6 +8,6 @@ class Book:
         return 'Название книги: {}, Автор: {}, Год издания: {}'.format(self.title, \
                                                                        self.author, self.year)
 
-book1 = Book('Робин Бобин', "Чарли Чаплин", 1984)
+book1 = Book('Робин Бобин',1984)
 
 print(book1.get_info())
