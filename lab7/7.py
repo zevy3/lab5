@@ -36,7 +36,7 @@ class TechManager(Manager, Technician):
         for employee in self.team:
             info = info + employee.get_info() + '\n'
         return info
-        # info = f"Team managed by {self.name} (ID: {self.eid}):\n"
+        # info = f"Команда {self.name} (ID - {self.eid}):\n"
         # info += "\n".join(emp.get_info() for emp in self.team)
         # return info
 
