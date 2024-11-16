@@ -10,7 +10,7 @@ vehicle=Vehicle('BMW','m5')
 print(vehicle.get_info())
 
 class Car(Vehicle):
-    def __init__(self,make, model,fuel_type):
+    def __init__(self,make,model,fuel_type):
         super().__init__(make, model)
         self.fuel_type=fuel_type
 
@@ -18,7 +18,7 @@ class Car(Vehicle):
         base_info=super().get_info()
         return '{}, Топливо:{}'.format(base_info,self.fuel_type)
 
-car=Car('BMW','5','БЕНЗ')
+car=Car('BMW','x7','БЕНЗ')
 print(car.get_info())
 
 vehicle2=Vehicle('12','11')
